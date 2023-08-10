@@ -37,7 +37,7 @@ async def addconnection(client, message):
                 and st.status != enums.ChatMemberStatus.OWNER
                 and userid not in ADMINS
         ):
-            await message.reply_text("Yᴏᴜ ꜱʜᴏᴜʟᴅ ʙᴇ ᴀɴ ᴀᴅᴍɪɴ ɪɴ Gɪᴠᴇɴ ɢʀᴏᴜᴘ!", quote=True)
+            await message.reply_text("Yᴏᴜ ꜱʜᴏᴜʟᴅ ʙᴇ ᴀᴅᴍɪɴ ɪɴ Gɪᴠᴇɴ ɢʀᴏᴜᴘ!", quote=True)
             return
     except Exception as e:
         logger.exception(e)
@@ -75,7 +75,7 @@ async def addconnection(client, message):
             await message.reply_text("ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ", quote=True)
     except Exception as e:
         logger.exception(e)
-        await message.reply_text('sᴏᴍᴇ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀs ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ !.', quote=True)
+        await message.reply_text('sᴏᴍᴇ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ !.', quote=True)
         return
 
 
@@ -87,7 +87,7 @@ async def deleteconnection(client, message):
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
-        await message.reply_text("ʀᴜɴ /connections ᴛᴏ ᴠɪᴇᴡs ᴏʀ ᴅɪsᴄᴏɴɴᴇᴄᴛ ᴀɴʏ ɢʀᴏᴜᴘ!", quote=True)
+        await message.reply_text("ʀᴜɴ /connections ᴛᴏ ᴠɪᴇᴡ ᴏʀ ᴅɪsᴄᴏɴɴᴇᴄᴛ ᴀɴʏ ɢʀᴏᴜᴘ!", quote=True)
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         group_id = message.chat.id
