@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Hᴇʟᴘ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs 📢', url='https://t.me/TamilanBotsZ')
+            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs 📢', url='https://t.me/uq_files')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -188,7 +188,7 @@ async def ban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("Tʜɪꜱ ɪꜱ ᴀɴ ɪɴᴠᴀʟɪᴅ ᴜꜱᴇʀ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ɪᴀ ʜᴀᴠᴇ ᴍᴇᴛ ʜɪᴍ ʙᴇғᴏʀᴇ.")
+        return await message.reply("Tʜɪꜱ ɪꜱ ᴀɴ ɪɴᴠᴀʟɪᴅ ᴜꜱᴇʀ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ ʜᴀᴠᴇ ᴍᴇᴛ ʜɪᴍ ʙᴇғᴏʀᴇ.")
     except IndexError:
         return await message.reply("Tʜɪꜱ ᴍɪɢʜᴛ ʙᴇ ᴀ ᴄʜᴀɴɴᴇʟ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ɪᴛꜱ ᴀ ᴜꜱᴇʀ.")
     except Exception as e:
@@ -221,7 +221,7 @@ async def unban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("Tʜɪꜱ ɪꜱ ᴀɴ ɪɴᴠᴀʟɪᴅ ᴜꜱᴇʀ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ɪᴀ ʜᴀᴠᴇ ᴍᴇᴛ ʜɪᴍ ʙᴇғᴏʀᴇ.,")
+        return await message.reply("Tʜɪꜱ ɪꜱ ᴀɴ ɪɴᴠᴀʟɪᴅ ᴜꜱᴇʀ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ ʜᴀᴠᴇ ᴍᴇᴛ ʜɪᴍ ʙᴇғᴏʀᴇ.,")
     except IndexError:
         return await message.reply("Tʜɪꜱ ᴍɪɢʜᴛ ʙᴇ ᴀ ᴄʜᴀɴɴᴇʟ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ɪᴛꜱ ᴀ ᴜꜱᴇʀ..")
     except Exception as e:
