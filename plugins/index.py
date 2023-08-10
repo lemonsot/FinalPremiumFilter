@@ -77,9 +77,9 @@ async def send_for_index(bot, message):
     try:
         k = await bot.get_messages(chat_id, last_msg_id)
     except:
-        return await message.reply('ᴍᴀᴋᴇ sᴜʀᴇ ɪᴀᴍ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪғ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪs ᴘʀɪᴠᴀᴛᴇ')
+        return await message.reply('ᴍᴀᴋᴇ sᴜʀᴇ ɪ ᴀᴍ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪғ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪs ᴘʀɪᴠᴀᴛᴇ')
     if k.empty:
-        return await message.reply('ɪᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪs ɢʀɪᴜᴘ')
+        return await message.reply('ɪ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ')
 
     if message.from_user.id in ADMINS:
         buttons = [
@@ -100,7 +100,7 @@ async def send_for_index(bot, message):
         try:
             link = (await bot.create_chat_invite_link(chat_id)).invite_link
         except ChatAdminRequired:
-            return await message.reply('ᴍᴀᴋᴇ sᴜʀᴇ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴡɪᴛʜ ᴡɪᴛʜ ɪɴᴠɪᴛᴇ ʟɪɴᴋ ᴘᴇʀᴍɪssɪᴏɴ')
+            return await message.reply('ᴍᴀᴋᴇ sᴜʀᴇ ɪ ᴀᴍ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴡɪᴛʜ ᴡɪᴛʜ ɪɴᴠɪᴛᴇ ʟɪɴᴋ ᴘᴇʀᴍɪssɪᴏɴ')
     else:
         link = f"@{message.forward_from_chat.username}"
     buttons = [
